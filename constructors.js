@@ -37,16 +37,18 @@ function expect(target) {
 // Only add code to *THIS* section!
 
 // ????????
-
 // ????????
- var Dog = (function (inf) {
-  
-  // console.log(inf.color);
+
+var Dog = (function (inf) {
   
   this.color = ''
+
   this.status = 'normal'
+
   this.hungry = true
+
   this.owner = undefined
+
   
   if (inf != undefined) {
     
@@ -58,20 +60,18 @@ function expect(target) {
   
     if (inf.hungry != undefined) {
          
-         this.hungry = inf.hungry
+      this.hungry = inf.hungry
        
     }    
     
   }
-  
-  
-  
+
 })
 
- var Human = (function (inf) {
+
+var Human = (function (inf) {
   
   this.cool = false
-  
   
   if (inf != undefined) {
     
@@ -83,11 +83,15 @@ function expect(target) {
   }
   
   this.pet = (function (dog) {
+
     dog.status = 'happy'
+
   })
   
   this.feed = (function (dog) {
+
     dog.hungry = false;
+    
   })
   
 })
